@@ -17,7 +17,6 @@ import RestaurantPicker from './components/RestaurantPicker.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1>Item Stay</h1>
     <BrowserRouter>
     <Routes>
       <Route path= '/' element ={<App/>}/>
