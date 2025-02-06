@@ -8,7 +8,7 @@ const Madlibs = () => {
                 </Link>
 
                 <div className="flex justify-center mt-5">
-                    <h1 className="bg-[#fef0f4] w-[800px] h-[200px] rounded-[30px] text-[80px] flex justify-center items-center">Madlibs</h1>
+                    <h1 className="bg-[#fef0f4]md:w-[800px] w-[410px]  h-[125px] md:h-[200px] md:text-[80px] text-[50px] rounded-[30px] flex justify-center items-center">Madlibs</h1>
                 </div>
 
                 <div className="madlibsPlacement flex justify-center mt-5">
@@ -52,7 +52,7 @@ const Madlibs = () => {
                 <div className="flex justify-center mt-10">
                     <p id="doneBtn" className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
                 </div>
-                
+
             </div>
         </div>
     )

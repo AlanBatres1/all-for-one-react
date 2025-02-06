@@ -8,14 +8,14 @@ const AddingNumbers = () =>{
                 </Link>
 
                 <div className="flex justify-center mt-5">
-                    <h1 className="bg-[#fef0f4] w-[800px] h-[200px] rounded-[30px] text-[80px] flex justify-center items-center">Adding Numbers</h1>
+                    <h1 className="bg-[#fef0f4] md:w-[800px] w-[410px]  h-[125px] md:h-[200px] md:text-[80px] text-[50px] rounded-[30px] flex justify-center items-center">Adding Numbers</h1>
                 </div>
 
                 <div className="flex justify-center mt-5">
-                    <h1 className="bg-[#fef0f4] w-[850px] h-[100px] rounded-[30px] text-[80px] flex justify-center items-center">Enter Numbers to Add</h1>
+                    <h1 className="bg-[#fef0f4] md:w-[850px] md:h-[100px]  w-[410px] text-center rounded-[30px] text-[50px] md:text-[80px] flex justify-center items-center">Enter Numbers to Add</h1>
                 </div>
 
-                <div className="flex flex-row justify-center gap-3">
+                <div className="flex md:flex-row flex-col justify-center gap-3">
                 <div className="mb-6 mt-2 flex items-center flex-col">
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]"></label>
                     <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
@@ -32,7 +32,7 @@ const AddingNumbers = () =>{
                 </div>
 
                 <div className="flex justify-center ">
-                    <h1 className="bg-[#fef0f4] w-[500px] h-[100px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
+                    <h1 className="bg-[#fef0f4] md:w-[500px] md:h-[100px] w-[410px] h-[100px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
                 </div>
 
                 <div className="flex justify-center mt-10">

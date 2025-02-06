@@ -8,10 +8,10 @@ const GreaterOrLess = () =>{
                 </Link>
 
                 <div className="flex justify-center mt-5">
-                    <h1 className="bg-[#fef0f4] w-[800px] h-[200px] rounded-[30px] text-[80px] flex justify-center items-center">Greater or Less Than</h1>
+                    <h1 className="bg-[#fef0f4] md:w-[800px] text-center w-[410px] h-[125px] md:h-[200px] md:text-[80px] text-[50px] rounded-[30px] flex justify-center items-center">Greater or Less Than</h1>
                 </div>
 
-                <div className="flex flex-row justify-center gap-3">
+                <div className="flex md:flex-row flex-col justify-center gap-3">
                 <div className="mb-6 mt-2 flex items-center flex-col">
                     <p className="text-[30px]">Enter Number</p>
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]"></label>
@@ -30,7 +30,7 @@ const GreaterOrLess = () =>{
                 </div>
 
                 <div className="flex justify-center mt-6">
-                    <h1 className="bg-[#fef0f4] w-[500px] h-[100px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
+                    <h1 className="bg-[#fef0f4] md:w-[500px] w-[410px]  h-[100px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
                 </div>
 
             </div>

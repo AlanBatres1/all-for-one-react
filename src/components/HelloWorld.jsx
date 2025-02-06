@@ -27,12 +27,12 @@ const HelloWorld = () =>{
           </Link>
     
           <div className="flex justify-center mt-8">
-            <h1 className="bg-[#fef0f4] w-[800px] h-[200px] rounded-[30px] text-[80px] flex justify-center items-center">Hello World</h1>
+            <h1 className="bg-[#fef0f4] md:w-[800px] w-[410px]  h-[125px] md:h-[200px] md:text-[80px] text-[50px] rounded-[30px] flex justify-center items-center">Hello World</h1>
           </div>
     
           <div className="mb-6 mt-10 flex items-center flex-col">
-            <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]">{htmlText}</label>
-            <input type="text" id="input" value={userInput} onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[700px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent"/>
+            <label id="promptText" for="default-input" className="mb-2 text-center md:text-[80px] text-[50px]">{htmlText}</label>
+            <input type="text" id="input" value={userInput} onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] md:w-[700px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent"/>
           </div>
     
             <div className="flex justify-center mt-10">

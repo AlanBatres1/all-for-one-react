@@ -3,43 +3,48 @@ const RestaurantPicker = () => {
     return (
         <div className="bg-[#9893d2] font-[baloo] bg-no-repeat bg-cover min-h-screen">
             <div className="">
-                <Link to="/" className="w-[200px] h-[100px] bg-[#fef0f4] text-[40px] flex justify-center items-center rounded-br-[30px]">
+                <Link to="/" className=" text-center w-[200px] h-[100px] bg-[#fef0f4] text-[40px] flex justify-center items-center rounded-br-[30px]">
                     <p>Home</p>
                 </Link>
 
                 <div className="flex justify-center mt-5">
-                    <h1 className="bg-[#fef0f4] w-[800px] h-[200px] rounded-[30px] text-[80px] flex justify-center items-center">Restaurant Picker</h1>
+                    <h1 className="bg-[#fef0f4] md:w-[800px] w-[410px]  h-[125px] md:h-[200px] md:text-[80px] text-[50px] rounded-[30px] flex justify-center items-center">Restaurant Picker</h1>
                 </div>
+                <h1 className="text-center md:text-[80px] text-[40px]">Pick a Category</h1>
 
-                <div className="flex flex-row justify-center gap-3">
+                <div className="flex md:flex-row flex-col justify-center  gap-7">
 
-                    <div className='flex justify-center'>
+                    <div className='flex justify-center items-center'>
                         <div className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#8ad1d1] flex flex-col justify-center items-center'>
                             <div className="flex justify-center">
-                                <img className="mt-10" src="src/assets/Chinese.png" alt="hello world" />
+                                <img className="mt-4" src="src/assets/Chinese.png" alt="hello world" />
                             </div>
-                            <p className="text-center mt-20">Chinese</p>
+                            <p className="text-center mt-4">Chinese</p>
                         </div>
                     </div>
 
                     <div className='flex justify-center'>
                         <div className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#ef8889] flex flex-col justify-center items-center'>
                             <div className="flex justify-center">
-                                <img className="mt-10" src="src/assets/fast-food.png" alt="hello world" />
+                                <img className="mt-4" src="src/assets/fast-food.png" alt="hello world" />
                             </div>
-                            <p className="text-center mt-20">Fast Food</p>
+                            <p className="text-center mt-4">Fast Food</p>
                         </div>
                     </div>
 
                     <div className='flex justify-center'>
                         <div className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#fdd79a] flex flex-col justify-center items-center'>
                             <div className="flex justify-center">
-                                <img className="mt-10" src="src/assets/taco.png" alt="hello world" />
+                                <img className="mt-4" src="src/assets/taco.png" alt="hello world" />
                             </div>
-                            <p className="text-center mt-20">Mexican</p>
+                            <p className="text-center mt-4">Mexican</p>
                         </div>
                     </div>
 
+                </div>
+
+                <div className="flex justify-center mt-5">
+                    <h1 className="bg-[#fef0f4] w-[500px] h-[100px] rounded-[30px] text-[40px] flex justify-center items-center"></h1>
                 </div>
 
             </div>

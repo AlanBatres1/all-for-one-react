@@ -8,7 +8,7 @@ const ReverseItNumbers = () =>{
             </Link>
 
             <div className="flex justify-center mt-5">
-                <h1 className="bg-[#fef0f4] w-[800px] h-[200px] rounded-[30px] text-[80px] text-center flex justify-center items-center">Reverse It Alphanumeric</h1>
+                <h1 className="bg-[#fef0f4] md:w-[800px] w-[410px]  h-[125px] md:h-[200px] md:text-[80px] text-center text-[50px] rounded-[30px] flex justify-center items-center">Reverse It Alphanumeric</h1>
             </div>
 
             <div className="flex lg:flex-row flex-col justify-center gap-3">
@@ -19,7 +19,7 @@ const ReverseItNumbers = () =>{
             </div>
 
             <div className="flex justify-center">
-            <img className="mt-10 w-[350px] h-[350px]" src="../src/assets/swap.png" alt="hello world" />
+            <img className="mt-10 md:w-[350px] md:h-[350px] w-[200px] h-[200px]" src="../src/assets/swap.png" alt="reverse Icon" />
             </div>
 
             <div className="flex items-center justify-center mt-4 mb-6 flex-col">
