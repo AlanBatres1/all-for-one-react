@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom"
+import { reverseItAlphanumeric } from "../services/DataServices"
+import { useState } from "react";
 const ReverseItAlphanumeric = () =>{
+    const [reversedText, setText] = useState('');
+    const [input ,setInput] = useState('');
+
+    const reverseIt = async () =>{
+        const result = await reverseItAlphanumeric (input);
+        setText(result)
+    }
     return(
         <div className="bg-[#8ad1d1] font-[baloo] bg-no-repeat bg-cover min-h-screen">
             <div className="">
@@ -15,7 +24,7 @@ const ReverseItAlphanumeric = () =>{
                 <div className="flex justify-center items-center mt-4 mb-6 flex-col">
                     <p className="text-center text-[30px]">Enter Text</p>
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px] flex"></label>
-                    <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
+                    <input type="text" id="input" value={input} onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
                 </div>
 
                 <div className="flex justify-center">
@@ -24,14 +33,14 @@ const ReverseItAlphanumeric = () =>{
 
                 <div className="flex items-center justify-center mt-4 mb-6 flex-col">
                     <p className="text-center text-[30px]">Reversed Text</p>
-                    <h1 className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
+                    <h1 className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[30px] flex justify-center items-center">{reversedText}</h1>
                 </div>
                 </div>
 
 
 
                 <div className="flex justify-center mt-10">
-                    <p id="doneBtn" className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
+                    <p id="doneBtn" onClick={reverseIt} className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
                 </div>
             </div>
         </div>

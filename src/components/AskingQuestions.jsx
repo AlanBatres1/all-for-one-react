@@ -1,6 +1,16 @@
-
 import { Link } from "react-router-dom"
+import { askingQuestions } from "../services/DataServices"
+import { useState } from "react";
+
 const AskingQuestions = () => {
+    const [fullPrompt, setPrompt] = useState('')
+    const [userName, setUserName] = useState('');
+    const [time, setTime] = useState('');
+
+    const getPrompt = async () => {
+        const result = await askingQuestions(userName, time);
+        setPrompt(result);
+    };
 
     return (
         <div className="bg-[#c8e1f4] font-[baloo] bg-no-repeat bg-cover min-h-screen">
@@ -19,7 +29,7 @@ const AskingQuestions = () => {
 
                 <div className="mb-6 mt-2 flex items-center flex-col">
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]"></label>
-                    <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] md:w-[700px] md:h-[100px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
+                    <input type="text" id="input" value={userName} onChange={(e) => setUserName(e.target.value)} className="bg-[#fef0f4] md:w-[700px] md:h-[100px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
                 </div>
 
                 <div className="flex justify-center mt-5">
@@ -28,15 +38,15 @@ const AskingQuestions = () => {
 
                 <div className="mb-6 mt-2 flex items-center flex-col">
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]"></label>
-                    <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] md:w-[700px] md:h-[100px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
+                    <input type="text" id="input" value={time} onChange={(e) => setTime(e.target.value)} className="bg-[#fef0f4] md:w-[700px] md:h-[100px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
                 </div>
 
                 <div className="flex justify-center">
-                    <p id="doneBtn" className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
+                    <p id="doneBtn" onClick={getPrompt} className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
                 </div>
 
                 <div className="flex justify-center mt-10">
-                    <h1 className="bg-[#fef0f4] md:w-[800px] md:h-[200px] w-[410px] h-[200px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
+                    <h1 className="bg-[#fef0f4] md:w-[800px] md:h-[200px] w-[410px] h-[200px] rounded-[30px] text-[30px] flex justify-center items-center">{fullPrompt}</h1>
                 </div>
             </div>
         </div>
