@@ -39,7 +39,7 @@ const RestaurantPicker = () => {
                     <div onClick={chinese} className='flex justify-center items-center'>
                         <div className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#8ad1d1] flex flex-col justify-center items-center'>
                             <div className="flex justify-center">
-                                <img className="mt-4" src="public/assets/Chinese.png" alt="hello world" />
+                                <img className="mt-4" src="/assets/Chinese.png" alt="hello world" />
                             </div>
                             <p className="text-center mt-4">Chinese</p>
                         </div>
@@ -48,7 +48,7 @@ const RestaurantPicker = () => {
                     <div onClick={fastFood} className='flex justify-center'>
                         <div className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#ef8889] flex flex-col justify-center items-center'>
                             <div className="flex justify-center">
-                                <img className="mt-4" src="public/assets/fast-food.png" alt="hello world" />
+                                <img className="mt-4" src="/assets/fast-food.png" alt="hello world" />
                             </div>
                             <p className="text-center mt-4">Fast Food</p>
                         </div>
@@ -57,7 +57,7 @@ const RestaurantPicker = () => {
                     <div onClick={mexican} className='flex justify-center'>
                         <div className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#fdd79a] flex flex-col justify-center items-center'>
                             <div className="flex justify-center">
-                                <img className="mt-4" src="public/assets/taco.png" alt="hello world" />
+                                <img className="mt-4" src="/assets/taco.png" alt="hello world" />
                             </div>
                             <p className="text-center mt-4">Mexican</p>
                         </div>

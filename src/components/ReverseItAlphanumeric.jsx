@@ -28,7 +28,7 @@ const ReverseItAlphanumeric = () =>{
                 </div>
 
                 <div className="flex justify-center">
-                <img className="mt-10 md:w-[350px] md:h-[350px] w-[200px] h-[200px]" src="../public/assets/swap.png" alt="reverse Icon" />
+                <img className="mt-10 md:w-[350px] md:h-[350px] w-[200px] h-[200px]" src="/assets/swap.png" alt="reverse Icon" />
                 </div>
 
                 <div className="flex items-center justify-center mt-4 mb-6 flex-col">
