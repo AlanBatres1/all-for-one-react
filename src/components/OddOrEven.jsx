@@ -10,7 +10,7 @@ const OddOrEven = () =>{
         setText(result)
     }
     return(
-        <div className="bg-[#cee3e6] bg-[url(../src/assets/CloudsBg.png)] font-[baloo] bg-no-repeat bg-cover bg-blend-overlay min-h-screen">
+        <div className="bg-[#cee3e6] bg-[url(../public/assets/CloudsBg.png)] font-[baloo] bg-no-repeat bg-cover bg-blend-overlay min-h-screen">
         <div className="">
           <Link to="/" className="w-[200px] h-[100px] bg-[#fef0f4] text-[40px] flex justify-center items-center rounded-br-[30px]">
             <p>Home</p>

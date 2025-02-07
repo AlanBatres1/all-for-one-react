@@ -1,5 +1,16 @@
 import { Link } from "react-router-dom"
+import { greaterOrLess } from "../services/DataServices"
+import { useState } from "react"
 const GreaterOrLess = () =>{
+    const [response, setResponse] = useState('');
+    const [input, setInput] = useState('');
+    const [input2, setInput2] = useState('');
+
+    const getGreaterOrLess = async () =>{
+        const response = await greaterOrLess(input, input2);
+        setResponse(response)
+    }
+
     return(
         <div className="bg-[#c68dc6] font-[baloo] bg-no-repeat bg-cover min-h-screen">
             <div className="">
@@ -15,22 +26,22 @@ const GreaterOrLess = () =>{
                 <div className="mb-6 mt-2 flex items-center flex-col">
                     <p className="text-[30px]">Enter Number</p>
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]"></label>
-                    <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
+                    <input type="text" id="input" value={input} onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
                 </div>
 
                 <div className="mb-6 mt-2 flex items-center flex-col">
                 <p className="text-[30px]">Enter Number</p>
                     <label id="promptText" for="default-input" className="mb-2 text-center text-[80px]"></label>
-                    <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
+                    <input type="text" id="input" value={input2} onChange={(e) => setInput2(e.target.value)} className="bg-[#fef0f4] w-[350px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent" />
                 </div>
                 </div>
 
                 <div className="flex justify-center mt-6">
-                    <p id="doneBtn" className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
+                    <p id="doneBtn" onClick={getGreaterOrLess} className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
                 </div>
 
                 <div className="flex justify-center mt-6">
-                    <h1 className="bg-[#fef0f4] md:w-[500px] w-[410px]  h-[100px] rounded-[30px] text-[30px] flex justify-center items-center"></h1>
+                    <h1 className="bg-[#fef0f4] md:w-[500px] w-[410px]  h-[100px] rounded-[30px] text-[30px] flex justify-center items-center">{response}</h1>
                 </div>
 
             </div>

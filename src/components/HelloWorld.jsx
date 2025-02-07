@@ -13,7 +13,7 @@ const HelloWorld = () => {
     };
 
     return (
-        <div className="bg-[#fdd79a] bg-[url(../src/assets/HelloBg.png)] font-[baloo] bg-no-repeat bg-cover bg-blend-overlay min-h-screen">
+        <div className="bg-[#fdd79a] bg-[url(../public/assets/HelloBg.png)] font-[baloo] bg-no-repeat bg-cover bg-blend-overlay min-h-screen">
             <div className="">
                 <Link to="/" className="w-[200px] h-[100px] bg-[#fef0f4] text-[40px] flex justify-center items-center rounded-br-[30px]">
                     <p>Home</p>

@@ -13,7 +13,7 @@ const AddingNumbers = () => {
     };
 
     return (
-        <div className="bg-[#aa9dd1] bg-[url(../src/assets/AddingBg.png)] font-[baloo] bg-no-repeat bg-cover bg-blend-overlay min-h-screen">
+        <div className="bg-[#aa9dd1] bg-[url(../public/assets/AddingBg.png)] font-[baloo] bg-no-repeat bg-cover bg-blend-overlay min-h-screen">
             <div className="">
                 <Link to="/" className="w-[200px] h-[100px] bg-[#fef0f4] text-[40px] flex justify-center items-center rounded-br-[30px]">
                     <p>Home</p>

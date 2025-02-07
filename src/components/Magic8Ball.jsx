@@ -1,5 +1,15 @@
 import { Link } from "react-router-dom"
+import { magic8ball } from "../services/DataServices"
+import { useState } from "react"
 const Magic8Ball = ()=>{
+    const [response, setResponse] = useState('')
+    const[input, setInput] = useState('')
+
+    const magic8BallResponse = async () =>{
+        const result = await magic8ball (input);
+        setResponse(result)
+    }
+
     return(
         <div className="bg-[#5eb1e7] font-[baloo] bg-no-repeat bg-cover min-h-screen">
         <div className="">
@@ -13,16 +23,16 @@ const Magic8Ball = ()=>{
     
           <div className="mb-6 mt-10 flex items-center flex-col">
             <label id="promptText" for="default-input" className="mb-2 text-center text-[40px] md:text-[80px]">Enter a Question</label>
-            <input type="text" id="input" onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] md:w-[700px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent"/>
+            <input type="text" id="input" value={input} onChange={(e) => setInput(e.target.value)} className="bg-[#fef0f4] md:w-[700px] w-[410px] h-[100px] rounded-[30px] text-[20px] text-center justify-center border-transparent"/>
           </div>
             <div className="flex justify-center">
-            <div className="bg-[url(../src/assets/8Ball.png)] md:w-[650px] md:h-[650px] w-[410px] h-[410px] bg-no-repeat bg-cover ">
-                <h1 className=" text-center text-[20px] md:text-[30px] md:mt-32 mt-20 text-white">gewggew</h1>
+            <div className="bg-[url(../public/assets/8Ball.png)] md:w-[650px] md:h-[650px] w-[410px] h-[410px] bg-no-repeat bg-cover ">
+                <h1 className=" text-center text-[20px] md:text-[30px] md:mt-32 mt-20 text-white">{response}</h1>
             </div>
             </div>
     
             <div className="flex justify-center mt-10">
-              <p id="doneBtn"className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
+              <p id="doneBtn" onClick={magic8BallResponse} className="bg-[#a1e58c] w-[350px] h-[100px] rounded-[30px] flex justify-center items-center text-[40px] cursor-pointer">Done</p>
           </div>
 
         </div>
