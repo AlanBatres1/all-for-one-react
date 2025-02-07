@@ -21,7 +21,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/helloWorld" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#fdd79a] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className="mt-10" src="public/assets/HelloWorldIcon.png" alt="hello world" />
+          <img className="mt-10" src="/assets/HelloWorldIcon.png" alt="hello world" />
         </div>
         <p className="text-center mt-20">Hello World</p>
       </Link>
@@ -31,7 +31,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/askingQuestions" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#c8e1f4] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className="mt-8" src="public/assets/AskingQuestionsIcon.png" alt="asking questions" />
+          <img className="mt-8" src="/assets/AskingQuestionsIcon.png" alt="asking questions" />
         </div>
         <p className="text-center mt-6">Asking <br/> Questions</p>
       </Link>
@@ -41,7 +41,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/addingNumbers" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#aa9dd1] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img src="public/assets/AddingNumbersIcon.png" alt="adding numbers" />
+          <img src="/assets/AddingNumbersIcon.png" alt="adding numbers" />
         </div>
         <p className="text-center mt-12">Adding <br/> Numbers</p>
       </Link>
@@ -51,7 +51,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/madlibs" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#ef8889] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img src="public/assets/MadlibIcon.png" alt="madlibs" />
+          <img src="/assets/MadlibIcon.png" alt="madlibs" />
         </div>
         <p className="text-center mt-4">Madlibs</p>
       </Link>
@@ -61,7 +61,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/oddOrEven" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#cee3e6] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className="" src="public/assets/OddOrEven.png" alt="odd or even" />
+          <img className="" src="/assets/OddOrEven.png" alt="odd or even" />
         </div>
         <p className="text-center mt-4">Odd or Even</p>
       </Link>
@@ -71,7 +71,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/reverseItAlphanumeric" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#8ad1d1] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className="w-[200px] h-[200px]" src="public/assets/file (17).png" alt="reverse alphanumeric" />
+          <img className="w-[200px] h-[200px]" src="/assets/file (17).png" alt="reverse alphanumeric" />
         </div>
         <p className="text-center">Reverse It <br />(Alphanumeric)</p>
       </Link>
@@ -81,7 +81,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/reverseItNumbers" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#fcc2d2] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className="w-[200px] h-[200px]" src="public/assets/NumbersIcon.png" alt="reverse numbers" />
+          <img className="w-[200px] h-[200px]" src="/assets/NumbersIcon.png" alt="reverse numbers" />
         </div>
         <p className="text-center">Reverse It <br />(Numbers)</p>
       </Link>
@@ -91,7 +91,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/magic8Ball" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#5eb1e7] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img src="public/assets/file (16).png" alt="magic 8 ball" />
+          <img src="/assets/file (16).png" alt="magic 8 ball" />
         </div>
         <p className="text-center mt-9">Magic 8 Ball</p>
       </Link>
@@ -101,7 +101,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/greaterOrLess" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#c68dc6] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className=" mt-6" src="public/assets/GuessItIcon.png" alt="greater or less" />
+          <img className=" mt-6" src="/assets/GuessItIcon.png" alt="greater or less" />
         </div>
         <p className="text-center mt-14">Greater or Less</p>
       </Link>
@@ -111,7 +111,7 @@ function App() {
       <div className='flex justify-center'>
       <Link to="/restaurantPicker" className='w-[250px] h-[325px] cursor-pointer rounded-[30px] bg-[#9793d2] flex flex-col justify-center items-center'>
         <div className="flex justify-center">
-          <img className="" src="public/assets/RestaurantPickerIcon.png" alt="restaurant picker" />
+          <img className="" src="/assets/RestaurantPickerIcon.png" alt="restaurant picker" />
         </div>
         <p className="text-center mt-7">Restaurant <br /> Picker</p>
       </Link>
